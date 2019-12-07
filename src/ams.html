@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <title>ams</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="container">
+        <li class="home"><a href="index.html">Towfiqul Islam</a></li>
+        <li><a href="projects.html"> Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="background: black;">
+      <div class="container">
+        <video
+          src="../assets/ams/videos/project_overview.mp4"
+          controls
+          muted
+          loop
+        ></video>
+      </div>
+    </div>
+    <div class="container">
+      <p class="paragraph-underline">
+        Overview
+      </p>
+
+      <p class="paragraph-text">
+        Advanced Medical Subsidiary is a web app for finding nearest specialist
+        doctors, booking appointments with doctors, booking cabins for sick
+        patients, Creating Patients own medical profile with previous reports,
+        deatiled doctor profiles and many more.
+      </p>
+      <p class="paragraph-underline">Features</p>
+
+      <ul class="paragraph-text">
+        <li>&rarr; Searching medical facilities</li>
+        <li>&rarr; doctors Search by speciality</li>
+        <li>&rarr; Finding facilities with google map</li>
+        <li>&rarr; Booking Appointment with email confirmation</li>
+        <li>
+          &rarr; Booking Cabin with credit card payment
+        </li>
+        <li>
+          &rarr; Patient Profile with medical reports
+        </li>
+      </ul>
+    </div>
+    <div style="background: #daaa4a;">
+      <h4 class="details-header">
+        Tech used for important features
+      </h4>
+      <div class="details container">
+        <div class="item">
+          <img src="../assets/ams/screenshots/mongodb.PNG" alt="" />
+          <div>
+            <h4>Database</h4>
+            <p>
+              MongoDB is used for storing all the data. MongoDB is a very
+              popular cross-platform NoSQL database.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <h4>Email</h4>
+            <p>
+              Emails are sent to MailTrap.io a real time development mail server
+              for sending Email.
+            </p>
+          </div>
+          <img
+            style="justify-self: end;"
+            src="../assets/ams/screenshots/mail.PNG"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img src="../assets/ams/screenshots/map.PNG" alt="" />
+          <div>
+            <h4>Location</h4>
+            <p>
+              Google Maps added to show accurate locations and provide pinpoint
+              direction to the facility.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <h4>Performance Boost</h4>
+            <p>
+              Pagination added with client side caching for faster data loading
+              and smooth performance.
+            </p>
+          </div>
+          <img
+            style="justify-self: end;"
+            src="../assets/ams/screenshots/pagination.PNG"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img src="../assets/ams/screenshots/password_encryption.PNG" alt="" />
+          <div>
+            <h4>Security</h4>
+            <p>
+              Sensitive password are encrypted with bcrypt.js. A Popular NodeJS
+              package for encrypting password. Authentication are handled with
+              JWT to prevent any kind of route related security breach.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <h4>Payment</h4>
+            <p>
+              Payments are done through Stripe. A very Popular Payment Platform
+              for doing any kind internet business.
+            </p>
+          </div>
+          <img
+            style="justify-self: end;"
+            src="../assets/ams/screenshots/stripe.PNG"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="footer" style="text-align: center;">
+      <footer>
+        <a href="https://github.com/towfiqu" class="github">Github</a>
+        <a href="https://twitter.com" class="twitter">Twitter</a>
+        <a href="https://youtube.com" class="youtube">YouTube</a>
+        <p style="font-size: 12px;">Copyright &copy 2019 by Towfiqul Islam</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+Sensitive password are encrypted with bcrypt.js. A Popular nodeJS package for encrytping password.
+Authentication are handled with JWT to prevent any kind of route related security breach.

@@ -1,0 +1,1 @@
+MongoDB is used for storing all the data. MongoDB is a very popular cross-platform noSQL database.

@@ -1,0 +1,1 @@
+Pagination added with client side caching to faster data load and smooth performance.
