@@ -1,7 +1,8 @@
+@import "./variables";
 h3 {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 20px;
   font-weight: bold;
 }
 
@@ -12,6 +13,6 @@ p {
 
 h4 {
   font-style: italic;
-  color: #0c186b;
+  color: $blue;
   text-align: center;
 }
