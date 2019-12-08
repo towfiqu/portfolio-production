@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="/icon.7b8f86b4.png">
+
     <link rel="stylesheet" href="/main.48b3db1d.css">
     <title>ams</title>
   </head>
   <body>
-    <nav>
+    <nav class="big-nav">
       <ul class="container">
         <li class="home"><a href="/index.html">Towfiqul Islam</a></li>
         <li><a href="/projects.html"> Projects</a></li>
@@ -16,7 +18,20 @@
         <li><a href="/contact.html">Contact</a></li>
       </ul>
     </nav>
-    <div style="background: black;">
+    <div class="responsive-nav">
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li class="home"><a href="/index.html">Towfiqul Islam</a></li>
+        <li class="projects"><a href="/projects.html">Projects</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div style="background: beige;">
       <div class="container">
         <video src="/project_overview.18be5676.mp4" controls="" muted="" loop=""></video>
       </div>
@@ -47,14 +62,14 @@
         </li>
       </ul>
     </div>
-    <div style="background: #daaa4a;">
+    <div class="key-tech-container">
       <h4 class="details-header">
         Tech used for important features
       </h4>
       <div class="details container">
         <div class="item">
           <img src="/mongodb.cbc12ff6.PNG" alt="">
-          <div>
+          <div class="desc-2">
             <h4>Database</h4>
             <p>
               MongoDB is used for storing all the data. MongoDB is a very
@@ -63,18 +78,25 @@
           </div>
         </div>
         <div class="item">
-          <div>
+          <div class="desc-1">
             <h4>Email</h4>
             <p>
               Emails are sent to MailTrap.io a real time development mail server
               for sending Email.
             </p>
           </div>
-          <img style="justify-self: end;" src="/mail.16abe80f.PNG" alt="">
+          <img class="right-image" src="/mail.16abe80f.PNG" alt="">
+          <div class="desc-2 hide">
+            <h4>Email</h4>
+            <p>
+              Emails are sent to MailTrap.io a real time development mail server
+              for sending Email.
+            </p>
+          </div>
         </div>
         <div class="item">
           <img src="/map.fe5c2330.PNG" alt="">
-          <div>
+          <div class="desc-2">
             <h4>Location</h4>
             <p>
               Google Maps added to show accurate locations and provide pinpoint
@@ -83,18 +105,25 @@
           </div>
         </div>
         <div class="item">
-          <div>
+          <div class="desc-1">
             <h4>Performance Boost</h4>
             <p>
               Pagination added with client side caching for faster data loading
               and smooth performance.
             </p>
           </div>
-          <img style="justify-self: end;" src="/pagination.7d402393.PNG" alt="">
+          <img class="right-image" src="/pagination.7d402393.PNG" alt="">
+          <div class="desc-2 hide">
+            <h4>Performance Boost</h4>
+            <p>
+              Pagination added with client side caching for faster data loading
+              and smooth performance.
+            </p>
+          </div>
         </div>
         <div class="item">
           <img src="/password_encryption.7568b267.PNG" alt="">
-          <div>
+          <div class="desc-2">
             <h4>Security</h4>
             <p>
               Sensitive password are encrypted with bcrypt.js. A Popular NodeJS
@@ -104,14 +133,21 @@
           </div>
         </div>
         <div class="item">
-          <div>
+          <div class="desc-1">
             <h4>Payment</h4>
             <p>
               Payments are done through Stripe. A very Popular Payment Platform
               for doing any kind internet business.
             </p>
           </div>
-          <img style="justify-self: end;" src="/stripe.94510b20.PNG" alt="">
+          <img class="right-image" src="/stripe.94510b20.PNG" alt="">
+          <div class="desc-2 hide">
+            <h4>Payment</h4>
+            <p>
+              Payments are done through Stripe. A very Popular Payment Platform
+              for doing any kind internet business.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -123,5 +159,6 @@
         <p style="font-size: 12px;">Copyright &copy 2019 by Towfiqul Islam</p>
       </footer>
     </div>
+    <script src="/src.e31bb0bc.js"></script>
   </body>
 </html>

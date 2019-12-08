@@ -13,11 +13,10 @@ p {
   font-weight: 500px;
 }
 
-.footer-position {
-  display: grid;
-  grid-template-columns: 1fr;
-  height: 250px;
-  align-content: end;
+@media (max-width: 500px) {
+  p {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=/_about.4a36a2c4.css.map */

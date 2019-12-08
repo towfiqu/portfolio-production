@@ -7,16 +7,14 @@ h3 {
 
 p {
   font-size: 18px;
-  //   letter-spacing: 1px;
   line-height: 30px;
   width: 80%;
   margin: auto;
   font-weight: 500px;
 }
 
-.footer-position {
-  display: grid;
-  grid-template-columns: 1fr;
-  height: 250px;
-  align-content: end;
+@media (max-width: 500px) {
+  p {
+    width: 100%;
+  }
 }

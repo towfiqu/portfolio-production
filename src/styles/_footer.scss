@@ -1,8 +1,12 @@
 .footer {
   align-self: end;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
   a {
     text-decoration: none;
     color: $white;
@@ -19,19 +23,5 @@
   }
   .youtube {
     background: $youtube-bg;
-  }
-}
-
-@media (max-width: 800px) {
-  .footer {
-    position: fixed;
-    bottom: 0;
-    left: 30%;
-  }
-}
-
-@media (max-width: 500px) {
-  .footer {
-    left: 25%;
   }
 }

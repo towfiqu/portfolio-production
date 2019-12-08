@@ -10,11 +10,17 @@
   <body>
     <div class="main-container">
       <div class="home-bio">
-        <h3>Towfiqul Islam</h3>
-        <div class="header">
-          <h4 class="projects"><a href="projects.html">Projects</a></h4>
-          <h4 class="about"><a href="about.html">About</a></h4>
-          <h4><a href="contact.html">Contact</a></h4>
+        <div class="responsive-nav">
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul class="nav-links">
+            <li class="projects"><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
 
         <div class="content-bio">
@@ -27,7 +33,9 @@
         </div>
         <div></div>
         <!-- position footer at the bottom -->
-        <div class="footer">
+        <div class="footer" style="position: fixed;">
+          <!-- only on home page -->
+
           <footer>
             <a href="https://github.com/towfiqu" class="github">Github</a>
             <a href="https://twitter.com" class="twitter">Twitter</a>
@@ -104,5 +112,7 @@
         </div>
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

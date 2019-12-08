@@ -18,6 +18,7 @@
       height: 200px;
       border-radius: 50%;
       margin-bottom: 40px;
+      margin-top: 70px;
     }
 
     p {
@@ -46,7 +47,7 @@
 
 @media (min-width: 800px) {
   .home-bio {
-    .header {
+    .responsive-nav {
       display: none;
     }
   }
