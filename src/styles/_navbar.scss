@@ -1,9 +1,11 @@
-@import "./variables";
+@import './variables';
 .big-nav {
   background: $yellow;
-  position: fixed;
+  // position: fixed;
+  margin-bottom: 20px;
   width: 100%;
   z-index: 1;
+
   ul {
     list-style: none;
     display: grid;
@@ -47,7 +49,7 @@
     z-index: 1;
     height: 100vh;
     width: 100%;
-    background: $darkPink;
+    background: whitesmoke;
     align-items: center;
     justify-items: center;
     clip-path: circle(100px at 90% -20%);
@@ -62,7 +64,8 @@
       opacity: 0;
       a {
         color: black;
-        font-size: 25px;
+        font-size: 20px;
+        font-weight: bold;
       }
     }
   }

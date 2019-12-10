@@ -1,8 +1,7 @@
 video {
-  width: 100%;
+  width: 70%;
+  display: block;
   margin: auto;
-  margin-top: 90px;
-  margin-bottom: 40px;
 }
 
 ul,
@@ -60,7 +59,7 @@ li {
 
 @media (max-width: 800px) {
   video {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 20px;
   }
 }
