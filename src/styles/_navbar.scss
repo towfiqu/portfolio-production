@@ -1,7 +1,6 @@
 @import './variables';
 .big-nav {
   background: $yellow;
-  // position: fixed;
   margin-bottom: 20px;
   width: 100%;
   z-index: 1;
@@ -93,8 +92,23 @@
   }
 }
 
+.back-btn {
+  // display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 8px;
+  border-style: none;
+  border-radius: 2px;
+  background: $yellow;
+  a {
+    color: black;
+  }
+}
+
 @media (min-width: 800px) {
-  .burger {
+  .burger,
+  .back-btn {
     display: none;
   }
 }
