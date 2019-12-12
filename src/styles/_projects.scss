@@ -11,13 +11,15 @@ h3 {
     h4 {
       margin-bottom: 20px;
       text-align: center;
+      font-weight: 300;
     }
   }
   img {
-    width: 100%;
+    width: 60%;
     height: 400px;
-    text-align: center;
-    margin-top: 60px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30px;
     margin-bottom: 10px;
   }
 
@@ -36,13 +38,13 @@ h3 {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .ams {
     img {
-      height: 150px;
-    }
-    .tech {
-      display: none;
+      height: 200px;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }

@@ -13,8 +13,14 @@ p {
   font-weight: 500px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   p {
     width: 100%;
+  }
+}
+
+@media (min-width: 500px) {
+  #about-footer {
+    position: fixed;
   }
 }

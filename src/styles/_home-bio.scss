@@ -1,16 +1,12 @@
 .home-bio {
   width: 50%;
   text-align: center;
-  background: $yellow;
+  background: whitesmoke;
   height: 100vh;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-
-  h3 {
-    margin-top: 20px;
-  }
 
   .content-bio {
     img {
@@ -30,8 +26,10 @@
 
 @media (max-width: 800px) {
   .home-bio {
-    h3 {
-      display: none;
+    .content-bio {
+      img {
+        margin-top: 20px;
+      }
     }
     .header {
       display: grid;

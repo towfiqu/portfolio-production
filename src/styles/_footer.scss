@@ -1,8 +1,4 @@
 .footer {
-  align-self: end;
-  margin-bottom: 20px;
-  margin-top: 50px;
-
   bottom: 0;
   left: 0;
   width: 100%;
@@ -10,11 +6,12 @@
   a {
     text-decoration: none;
     color: $white;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5px 15px;
     border-radius: 4px;
     font-size: 16px;
   }
+
   .github {
     background: $github-bg;
   }
