@@ -8,17 +8,18 @@ h3 {
 p {
   font-size: 18px;
   line-height: 30px;
-  width: 80%;
+  width: 60%;
   margin: auto;
   font-weight: 500px;
 }
 
 @media (max-width: 800px) {
   p {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 400px) {
   #about-footer {
     position: fixed;
   }
