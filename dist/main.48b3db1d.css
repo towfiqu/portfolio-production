@@ -208,7 +208,7 @@ h3 {
   transition: all 1s ease-out;
 }
 .responsive-nav .nav-links .projects {
-  grid-row: span 3;
+  grid-row: span 2;
   align-self: end;
 }
 .responsive-nav .nav-links li {

@@ -55,7 +55,7 @@
     -webkit-clip-path: circle(100px at 90% -20%);
     transition: all 1s ease-out;
     .projects {
-      grid-row: span 3;
+      grid-row: span 2;
       align-self: end;
     }
     li {
@@ -93,7 +93,6 @@
 }
 
 .back-btn {
-  // display: block;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
