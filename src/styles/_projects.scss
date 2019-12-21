@@ -1,50 +1,84 @@
-h3 {
+.projects-heading {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 10px;
   font-weight: bold;
 }
 .ams {
-  .project-title {
-    cursor: pointer;
-    color: #333;
-    h4 {
-      margin-bottom: 20px;
-      text-align: center;
-      font-weight: 300;
-    }
-  }
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  background: #eee;
+  margin-top: 40px;
+
+  transition: 0.3s;
   img {
-    width: 60%;
-    height: 400px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
   }
+  .ams-details {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    .project-title {
+      font-weight: 300;
+      align-self: center;
+      cursor: pointer;
+      color: black;
+    }
 
-  p {
-    text-align: center;
-    font-size: 14px;
-    margin: 0;
-    align-self: center;
-  }
+    .project-title:hover {
+      color: midnightblue;
+    }
 
-  span {
-    padding: 5px 10px;
-    border-radius: 50px;
-
-    font-size: 12px;
+    .live-link {
+      color: white;
+      font-size: 16px;
+      background: #aa1010;
+      border-radius: 4px;
+      padding: 10px 15px;
+    }
+    .source-code {
+      color: white;
+      font-size: 16px;
+      background: #24292e;
+      border-radius: 4px;
+      padding: 10px 15px;
+    }
   }
 }
 
+.ams:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
+  .projects-p {
+    display: none;
+  }
   .ams {
+    width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     img {
-      height: 200px;
       width: 100%;
-      margin-left: 0;
-      margin-right: 0;
     }
+    .ams-details {
+      .project-title {
+        padding: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .action-btn {
+    display: none;
   }
 }

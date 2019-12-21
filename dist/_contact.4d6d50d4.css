@@ -1,18 +1,29 @@
 h3 {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 25px;
+  padding-bottom: 70px;
   font-weight: bold;
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 25px;
   text-align: center;
+  width: 60%;
+  margin: auto;
 }
 
 h4 {
   font-style: italic;
   color: #0c186b;
   text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  p {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=/_contact.4d6d50d4.css.map */

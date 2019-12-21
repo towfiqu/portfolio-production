@@ -1,7 +1,6 @@
 @import './variables';
-@import './home-bio';
 @import './footer';
-@import './home-skill';
+@import './skills';
 @import './projects';
 @import './navbar';
 @import './ams';
@@ -25,20 +24,31 @@ a {
   text-decoration: none;
 }
 
-.main-container {
-  background: white;
+.content-bio {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .container {
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 
-@media (max-width: 800px) {
-  .main-container {
-    display: grid;
-    grid-template-columns: 1fr;
+@media (max-width: 900px) {
+  .content-bio {
+    min-height: 80vh;
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

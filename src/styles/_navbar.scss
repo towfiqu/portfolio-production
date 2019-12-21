@@ -9,10 +9,10 @@
     list-style: none;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    padding: 10px;
+    padding: 20px;
 
     .home {
-      grid-column: span 6;
+      grid-column: span 5;
     }
   }
   a {
@@ -54,7 +54,7 @@
     clip-path: circle(100px at 90% -20%);
     -webkit-clip-path: circle(100px at 90% -20%);
     transition: all 1s ease-out;
-    .projects {
+    .skills {
       grid-row: span 2;
       align-self: end;
     }
@@ -81,6 +81,9 @@
   .nav-links li:nth-child(4) {
     transition: all 0.2s ease 0.4s;
   }
+  .nav-links li:nth-child(5) {
+    transition: all 0.2s ease 0.4s;
+  }
 
   li.fade {
     opacity: 1;
@@ -105,14 +108,15 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .burger,
-  .back-btn {
+  .back-btn,
+  .nav-links.open {
     display: none;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .big-nav {
     display: none;
     ul {
