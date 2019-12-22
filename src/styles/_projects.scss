@@ -9,9 +9,10 @@
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px;
+  // padding: 10px;
   background: #eee;
   margin-top: 40px;
+  border-radius: 4px;
 
   transition: 0.3s;
   img {
@@ -23,11 +24,17 @@
     grid-column: span 2;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     .project-title {
+      padding: 20px 0;
       font-weight: 300;
       align-self: center;
       cursor: pointer;
       color: black;
+    }
+
+    .action-btn {
+      align-self: start;
     }
 
     .project-title:hover {
@@ -35,15 +42,15 @@
     }
 
     .live-link {
-      color: white;
-      font-size: 16px;
-      background: #aa1010;
+      color: black;
+      font-size: 14px;
+      background: white;
       border-radius: 4px;
       padding: 10px 15px;
     }
     .source-code {
       color: white;
-      font-size: 16px;
+      font-size: 14px;
       background: #24292e;
       border-radius: 4px;
       padding: 10px 15px;
