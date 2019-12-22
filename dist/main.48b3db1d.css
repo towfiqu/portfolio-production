@@ -190,7 +190,7 @@
 .big-nav ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   padding: 20px;
 }
 .big-nav ul .home {
@@ -489,6 +489,63 @@ li {
 @media (min-width: 900px) {
   .ams-heading-2 {
     display: none;
+  }
+}
+.articles-heading {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.article {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.article img {
+  width: 350px;
+  height: 200px;
+  margin-right: 10px;
+}
+.article h3,
+.article p {
+  margin: 0;
+}
+.article .date {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 5px;
+  color: #333;
+}
+.article .title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.article .title:hover {
+  text-decoration: underline;
+}
+.article .intro {
+  font-size: 16px;
+  color: #333;
+  line-height: 30px;
+}
+
+@media (max-width: 900px) {
+  .article {
+    width: 90%;
+    flex-direction: column;
+  }
+  .article .intro {
+    display: none;
+  }
+  .article .date {
+    margin-top: 10px;
+  }
+  .article .title {
+    font-size: 20px;
   }
 }
 body {

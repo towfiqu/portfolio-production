@@ -5,7 +5,7 @@ h3 {
   font-weight: bold;
 }
 
-p {
+.about-p {
   font-size: 18px;
   line-height: 30px;
   width: 60%;
@@ -14,7 +14,7 @@ p {
 }
 
 @media (max-width: 800px) {
-  p {
+  .about-p {
     width: 90%;
     margin: auto;
   }

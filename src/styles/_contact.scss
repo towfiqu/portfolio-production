@@ -6,7 +6,7 @@ h3 {
   font-weight: bold;
 }
 
-p {
+.contact-p {
   font-size: 20px;
   line-height: 25px;
   text-align: center;
@@ -22,7 +22,7 @@ h4 {
 }
 
 @media (max-width: 500px) {
-  p {
+  .contact-p {
     width: 90%;
   }
 }
