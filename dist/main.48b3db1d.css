@@ -185,6 +185,9 @@
     width: 100%;
     margin-right: 0;
   }
+  .project .project-details {
+    grid-template-rows: 1fr;
+  }
   .project .project-details .project-title {
     padding: 20px;
     font-size: 16px;

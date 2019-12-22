@@ -85,6 +85,7 @@
       margin-right: 0;
     }
     .project-details {
+      grid-template-rows: 1fr;
       .project-title {
         padding: 20px;
         font-size: 16px;
