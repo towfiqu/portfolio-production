@@ -170,6 +170,7 @@
   }
   .ams img {
     width: 100%;
+    margin-right: 0;
   }
   .ams .ams-details .project-title {
     padding: 20px;
@@ -227,7 +228,6 @@
   height: 100vh;
   width: 100%;
   background: whitesmoke;
-  align-items: center;
   justify-items: center;
   clip-path: circle(100px at 90% -20%);
   -webkit-clip-path: circle(100px at 90% -20%);
