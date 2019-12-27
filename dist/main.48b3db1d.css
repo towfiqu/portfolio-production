@@ -510,7 +510,14 @@ li {
 .articles-heading {
   text-align: center;
   padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.sub-heading {
+  margin: 0;
+  text-align: center;
   padding-bottom: 40px;
+  font-size: 16px;
 }
 
 .article {
@@ -526,7 +533,7 @@ li {
 .article img {
   width: 350px;
   height: 200px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .article h3,
 .article p {
