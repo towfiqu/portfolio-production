@@ -1,6 +1,6 @@
 @import './variables';
 .big-nav {
-  background: $yellow;
+  background: #f0f0f0;
   margin-bottom: 20px;
   width: 100%;
   z-index: 1;
@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     justify-items: center;
-    padding: 20px;
+    padding: 30px;
 
     .home {
       grid-column: span 5;
