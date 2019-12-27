@@ -129,10 +129,12 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
+  justify-items: center;
   padding: 20px;
 }
 .big-nav ul .home {
   grid-column: span 5;
+  justify-self: start;
 }
 .big-nav a {
   text-decoration: none;
