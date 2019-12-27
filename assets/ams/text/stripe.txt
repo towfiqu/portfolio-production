@@ -1,1 +1,0 @@
-Payments are done through Stripe. A very Popular Payment Platform for doing any kind internet business.

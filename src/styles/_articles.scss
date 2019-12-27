@@ -12,35 +12,30 @@
 
 .article {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  width: 45%;
+  margin: auto;
+  margin-bottom: 40px;
   .content {
-    grid-column: span 2;
+    justify-items: center;
   }
-  img {
-    width: 350px;
-    height: 200px;
-    margin-right: 20px;
-  }
+
   h3,
   p {
     margin: 0;
   }
-  width: 60%;
-  margin: auto;
-
-  margin-bottom: 40px;
 
   .date {
-    text-transform: uppercase;
     font-size: 14px;
-    font-style: italic;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  .title {
-    text-transform: uppercase;
     margin-bottom: 10px;
     color: #222;
+  }
+  .title {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
   }
   .title:hover {
     text-decoration: underline;
@@ -48,22 +43,15 @@
   .intro {
     font-size: 16px;
     color: #333;
-    line-height: 30px;
+    line-height: 25px;
   }
 }
 
 @media (max-width: 900px) {
   .article {
     width: 90%;
-    img {
-      width: 100%;
-      margin-right: 0;
-    }
     display: flex;
     flex-direction: column;
-    .intro {
-      display: none;
-    }
     .date {
       margin-top: 10px;
     }

@@ -1,1 +1,0 @@
-Emails are sent to MailTrap.io a real time developemnt mail server for sending Email.
