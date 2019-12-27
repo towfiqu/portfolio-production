@@ -1,6 +1,5 @@
 @import './variables';
 @import './footer';
-@import './skills';
 @import './projects';
 @import './navbar';
 @import './ams';
@@ -28,28 +27,79 @@ a {
 .content-bio {
   display: grid;
   grid-template-columns: 1fr;
-  min-height: 60vh;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
+
+  img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    justify-self: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
   p {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 30px;
     text-align: center;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.skill-header {
+  text-align: center;
+  h2 {
+    color: #222;
+    font-weight: 400;
+  }
+  p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+}
+
+.skill-container {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  .content {
+    text-align: center;
+  }
+  h3 {
+    color: #222;
+  }
+  p {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #333;
   }
 }
 
 .container {
-  width: 60%;
+  width: 50%;
   margin: auto;
 }
 
-@media (max-width: 900px) {
-  .content-bio {
-    min-height: 80vh;
-    p {
-      font-size: 20px;
-      line-height: 30px;
-    }
+.nav-container {
+  width: 70%;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .skill-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
