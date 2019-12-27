@@ -421,6 +421,10 @@ li {
   padding: 10px 15px;
 }
 
+.arrow {
+  font-size: 22px;
+}
+
 .tech-details-container {
   width: 60%;
   margin: auto;
