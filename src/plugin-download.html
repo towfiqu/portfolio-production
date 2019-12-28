@@ -1,25 +1,24 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png" />
-
     <link rel="stylesheet" href="./styles/main.scss" />
-    <title>Projects</title>
+    <title>Plugin Download</title>
   </head>
+
   <body>
     <nav class="big-nav">
       <ul class="nav-container">
         <li class="home"><a href="/">Towfiqul Islam</a></li>
 
         <li><a href="/projects/">Projects</a></li>
-        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/articles//">Articles</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
     </nav>
-
     <div class="responsive-nav">
       <div class="burger">
         <div class="line"></div>
@@ -36,65 +35,29 @@
       </ul>
     </div>
 
-    <div class="container">
-      <h3 class="projects-heading">
-        Projects
-      </h3>
-      <p
-        class="projects-p"
-        style="text-align: center; font-size: 14px; margin: 10px 0 40px 0"
-      >
-        Over the years I have created many projects. These are some of my best
-        works.
+    <div class="message">
+      <p>
+        Hey! Thanks so much for visiting my site. I am still testing and trying
+        few different things with this plugin. You can still try it yourself on
+        Mozilla Firefox. Just download the plugin from below then in your
+        Firefox browser go to add ons -> settings -> install add-on from file.
       </p>
+      <a
+        style="
+        color: #eee;
+        font-size: 14px;
+        background: #333;
+        border-radius: 4px;
+        padding: 5px 15px;
+        "
+        href="https://drive.google.com/open?id=1f7xBggKSeYWArowO8aueUwKktfQ1kU1r"
+        target="_blank"
+        >Download</a
+      >
     </div>
-    <div class="project">
-      <a href="/ams/">
-        <img src="../assets/ams/screenshots/thumbnail.PNG" alt="" />
-      </a>
 
-      <div class="project-details">
-        <a href="/ams/">
-          <h4 class="project-title">
-            A Full Stack Web Application Made with React, NodeJS & MongoDB.
-          </h4>
-        </a>
-        <div class="action-btn">
-          <a
-            href="https://github.com/towfiqu/ams"
-            target="_blank"
-            class="source-code"
-            >Source Code</a
-          >
-          <a href="/ams-live/" class="live-link">Visit Site</a>
-        </div>
-      </div>
-    </div>
-    <div class="project">
-      <a href="/anime-plugin/">
-        <img src="../assets/anime-plugin/screenshot.PNG" alt="" />
-      </a>
-
-      <div class="project-details">
-        <a href="/anime-plugin/">
-          <h4 class="project-title">
-            A Browser Extension Made with React and third party API for Anime
-            fans.
-          </h4>
-        </a>
-        <div class="action-btn">
-          <a
-            href="https://github.com/towfiqu/anime-plugin"
-            target="_blank"
-            class="source-code"
-            >Source Code</a
-          >
-          <a href="/plugin-download/" class="live-link">Download</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer" style="margin-top: 30px;">
-      <a style="margin-bottom: 10px;">
+    <div class="footer" style="margin-top: 30px; position: fixed;">
+      <footer style="margin-bottom: 10px;">
         <a target="_blank" href="https://github.com/towfiqu"
           ><img class="footer-icon" src="../assets/svg/github-brands.svg" alt=""
         /></a>
@@ -126,8 +89,9 @@
         <p style="font-size: 14px; margin-bottom: 0;">
           Copyright &copy 2020 by Towfiqul Islam
         </p>
-      </a>
+      </footer>
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>

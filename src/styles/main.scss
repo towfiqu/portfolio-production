@@ -93,6 +93,18 @@ a {
   margin: auto;
 }
 
+.message {
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  line-height: 30px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 800px) {
   .container {
     width: 90%;
@@ -101,5 +113,8 @@ a {
   .skill-container {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .message {
+    width: 90%;
   }
 }
