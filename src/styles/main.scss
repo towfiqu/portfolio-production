@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: #333;
+}
+
 .content-bio {
   display: grid;
   grid-template-columns: 1fr;
