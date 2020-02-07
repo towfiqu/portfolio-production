@@ -586,6 +586,11 @@ a:visited {
 .skill-container .content {
   text-align: center;
 }
+.skill-container .content h4 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+}
 .skill-container h3 {
   color: #222;
 }
