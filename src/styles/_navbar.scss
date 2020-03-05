@@ -20,8 +20,13 @@
   a {
     text-decoration: none;
     font-size: 16px;
-    color: black;
-    font-weight: bold;
+    color: #333;
+    font-weight: normal;
+    font-family: 'Roboto';
+  }
+  a:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid grey;
   }
 }
 

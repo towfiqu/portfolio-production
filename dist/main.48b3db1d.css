@@ -138,89 +138,64 @@
 .big-nav a {
   text-decoration: none;
   font-size: 16px;
-  color: black;
-  font-weight: bold;
+  color: #333;
+  font-weight: normal;
+  font-family: "Roboto";
+}
+.big-nav a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid grey;
 }
 
 .responsive-nav {
   position: relative;
 }
-.responsive-nav .burger {
+.responsive-nav .menu-icon {
   position: absolute;
   right: 5%;
   top: 20px;
   cursor: pointer;
-  z-index: 2;
-}
-.responsive-nav .burger .line {
-  width: 20px;
-  height: 3px;
-  margin: 5px;
-  background: black;
+  z-index: 3;
 }
 .responsive-nav .nav-links {
-  display: grid;
-  grid-template-rows: repeat(9, 1fr);
+  width: 200px;
+  height: 100%;
   position: fixed;
-  z-index: 1;
-  height: 100vh;
-  width: 100%;
-  background: whitesmoke;
-  justify-items: center;
-  clip-path: circle(100px at 90% -20%);
-  -webkit-clip-path: circle(100px at 90% -20%);
-  transition: all 1s ease-out;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background: #f0f0f0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: 0.3s;
+  padding-top: 60px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.responsive-nav .nav-links .projects {
-  grid-row: span 2;
-  align-self: end;
+.responsive-nav .nav-links .home {
+  margin-bottom: 30px;
 }
 .responsive-nav .nav-links li {
-  align-self: end;
-  opacity: 0;
+  padding: 10px;
 }
-.responsive-nav .nav-links li a {
-  color: black;
-  font-size: 16px;
+.responsive-nav .nav-links a {
+  color: #333;
+  font-size: 14px;
   font-weight: bold;
 }
-.responsive-nav .nav-links li:nth-child(1) {
-  transition: all 0.2s ease 0.1s;
-}
-.responsive-nav .nav-links li:nth-child(2) {
-  transition: all 0.2s ease 0.2s;
-}
-.responsive-nav .nav-links li:nth-child(3) {
-  transition: all 0.2s ease 0.3s;
-}
-.responsive-nav .nav-links li:nth-child(4) {
-  transition: all 0.2s ease 0.4s;
-}
-.responsive-nav li.fade {
-  opacity: 1;
+.responsive-nav .nav-links a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid grey;
 }
 .responsive-nav .nav-links.open {
-  clip-path: circle(1000px at 90% -20%);
-  -webkit-clip-path: circle(1000px at 90% -20%);
-}
-
-.back-btn {
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 5px 8px;
-  border-style: none;
-  border-radius: 2px;
-  background: #daaa4a;
-}
-.back-btn a {
-  color: black;
+  transform: translateX(0);
 }
 
 @media (min-width: 800px) {
-  .burger,
-.back-btn,
-.nav-links.open {
+  .menu-icon,
+.nav-links {
     display: none;
   }
 }
