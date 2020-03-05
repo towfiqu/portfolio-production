@@ -20,9 +20,8 @@
   a {
     text-decoration: none;
     font-size: 16px;
-    color: #333;
-    font-weight: normal;
     font-family: 'Roboto';
+    color: #333;
   }
   a:hover {
     padding-bottom: 5px;
@@ -42,7 +41,7 @@
   }
 
   .nav-links {
-    width: 200px;
+    width: 50%;
     height: 100%;
     position: fixed;
     z-index: 2;
@@ -82,9 +81,24 @@
   }
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 @media (min-width: 800px) {
   .menu-icon,
-  .nav-links {
+  .nav-links,
+  .responsive-nav {
     display: none;
   }
 }
