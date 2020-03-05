@@ -28,89 +28,58 @@
 .responsive-nav {
   position: relative;
 
-  .burger {
+  .menu-icon {
     position: absolute;
     right: 5%;
     top: 20px;
     cursor: pointer;
-    z-index: 2;
-
-    .line {
-      width: 20px;
-      height: 3px;
-      margin: 5px;
-      background: black;
-    }
+    z-index: 3;
   }
 
   .nav-links {
-    display: grid;
-    grid-template-rows: repeat(9, 1fr);
+    width: 200px;
+    height: 100%;
     position: fixed;
-    z-index: 1;
-    height: 100vh;
-    width: 100%;
-    background: whitesmoke;
-    justify-items: center;
-    clip-path: circle(100px at 90% -20%);
-    -webkit-clip-path: circle(100px at 90% -20%);
-    transition: all 1s ease-out;
-    .projects {
-      grid-row: span 2;
-      align-self: end;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background: #f0f0f0;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: 0.3s;
+    padding-top: 60px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .home {
+      margin-bottom: 30px;
     }
     li {
-      align-self: end;
-
-      opacity: 0;
-      a {
-        color: black;
-        font-size: 16px;
-        font-weight: bold;
-      }
+      padding: 10px;
     }
-  }
 
-  .nav-links li:nth-child(1) {
-    transition: all 0.2s ease 0.1s;
-  }
-  .nav-links li:nth-child(2) {
-    transition: all 0.2s ease 0.2s;
-  }
-  .nav-links li:nth-child(3) {
-    transition: all 0.2s ease 0.3s;
-  }
-  .nav-links li:nth-child(4) {
-    transition: all 0.2s ease 0.4s;
-  }
+    a {
+      color: #333;
+      font-size: 14px;
+      font-weight: bold;
+    }
 
-  li.fade {
-    opacity: 1;
+    a:hover {
+      padding-bottom: 5px;
+      border-bottom: 2px solid grey;
+    }
   }
 
   .nav-links.open {
-    clip-path: circle(1000px at 90% -20%);
-    -webkit-clip-path: circle(1000px at 90% -20%);
-  }
-}
-
-.back-btn {
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 5px 8px;
-  border-style: none;
-  border-radius: 2px;
-  background: $yellow;
-  a {
-    color: black;
+    transform: translateX(0);
   }
 }
 
 @media (min-width: 800px) {
-  .burger,
-  .back-btn,
-  .nav-links.open {
+  .menu-icon,
+  .nav-links {
     display: none;
   }
 }
