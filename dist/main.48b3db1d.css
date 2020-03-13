@@ -16,6 +16,10 @@
   margin-top: 10px;
 }
 
+.bg-darken {
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .footer-icon {
   width: 24px;
   height: 24px;
@@ -138,9 +142,8 @@
 .big-nav a {
   text-decoration: none;
   font-size: 16px;
-  color: #333;
-  font-weight: normal;
   font-family: "Roboto";
+  color: #333;
 }
 .big-nav a:hover {
   padding-bottom: 5px;
@@ -158,7 +161,7 @@
   z-index: 3;
 }
 .responsive-nav .nav-links {
-  width: 200px;
+  width: 50%;
   height: 100%;
   position: fixed;
   z-index: 2;
@@ -193,9 +196,24 @@
   transform: translateX(0);
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 @media (min-width: 800px) {
   .menu-icon,
-.nav-links {
+.nav-links,
+.responsive-nav {
     display: none;
   }
 }
@@ -473,7 +491,7 @@ li {
 
 .screenshot-img {
   width: 100%;
-  height: 500px;
+  height: 100%;
   display: block;
   padding: 10px;
 }
