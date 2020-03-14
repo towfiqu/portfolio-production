@@ -2,6 +2,9 @@
   text-align: center;
   padding-top: 25px;
   padding-bottom: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
 }
 .sub-heading {
   margin: 0;
@@ -48,6 +51,14 @@
 }
 
 @media (max-width: 900px) {
+  .articles-heading {
+    padding-top: 22.5px;
+
+    padding-bottom: 40px;
+  }
+  .sub-heading {
+    display: none;
+  }
   .article {
     width: 90%;
     display: flex;

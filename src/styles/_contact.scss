@@ -1,22 +1,28 @@
 @import './variables';
 h3 {
+  padding-top: 22.5px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  width: 90%;
+  margin: auto;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 40px;
-  font-weight: bold;
 }
 
 .contact-p {
-  font-size: 20px;
+  margin: 40px auto auto auto;
+  font-size: 16px;
   line-height: 25px;
   text-align: center;
   width: 60%;
-  margin: auto;
+
+  color: #333;
 }
 
 h4 {
   font-style: italic;
-  color: $blue;
+  color: #004579;
   text-align: center;
   margin-top: 20px;
 }

@@ -1,9 +1,11 @@
 @import './variables.scss';
 h3 {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 10px;
 
-  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
 }
 
 .about-container {
@@ -14,16 +16,15 @@ h3 {
     font-size: 16px;
     letter-spacing: 1px;
     color: #a27620;
-    margin-top: 10px;
   }
 }
 
 .about-p {
-  font-size: 18px;
   line-height: 30px;
   width: 50%;
   margin: auto;
   color: #222;
+  font-weight: 400;
 }
 
 .link-inside-p {
@@ -34,9 +35,13 @@ h3 {
   .about-p {
     width: 90%;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 40px;
+    // font-size: 16px;
   }
   .subheader {
     display: none;
+  }
+  h3 {
+    padding-top: 22.5px;
   }
 }
