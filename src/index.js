@@ -11,7 +11,7 @@ menuIcon.addEventListener('click', () => {
 
   navLinks.classList.toggle('open');
   overlay.classList.toggle('active');
-  footer.classList.toggle('bg-darken');
+  // footer.classList.toggle('bg-darken');
   links.forEach(link => {
     link.classList.toggle('fade');
   });
