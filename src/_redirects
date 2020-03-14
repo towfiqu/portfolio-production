@@ -7,4 +7,5 @@
 /contact/*             /contact.html           200  
 /ams-live/*             /ams-live.html           200  
 /book-exchange/*             /book-exchange.html           200  
-/plugin-download/*             /plugin-download.html           200  
+/ams-source/*             /ams-source.html           200  
+/book-exchange-source/*             /book-exchange-source.html           200  
