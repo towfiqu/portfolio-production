@@ -1,29 +1,15 @@
-@import './variables';
 .big-nav {
-  background: #f0f0f0;
-  margin-bottom: 20px;
-  width: 100%;
-  z-index: 1;
-  border-bottom: 1px solid #ddd;
-
   ul {
-    list-style: none;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     justify-items: center;
-    padding: 30px;
 
     .home {
       grid-column: span 5;
       justify-self: start;
     }
   }
-  a {
-    text-decoration: none;
-    font-size: 16px;
-    font-family: 'Roboto';
-    color: #333;
-  }
+
   a:hover {
     padding-bottom: 5px;
     border-bottom: 2px solid grey;
@@ -42,34 +28,16 @@
   }
 
   .nav-links {
-    width: 50%;
-    height: 100%;
     position: fixed;
     z-index: 2;
     top: 0;
     right: 0;
-    background: #f0f0f0;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     transform: translateX(100%);
     transition: 0.3s;
-    padding-top: 60px;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    .home {
-      margin-bottom: 30px;
-    }
-    li {
-      padding: 10px;
-    }
-
-    a {
-      color: #333;
-      font-size: 14px;
-      font-weight: bold;
-    }
 
     a:hover {
       padding-bottom: 5px;
@@ -114,13 +82,6 @@
       li {
         flex: 1;
       }
-    }
-
-    a {
-      text-decoration: none;
-      font-size: 14px;
-      color: black;
-      font-weight: bold;
     }
   }
 }

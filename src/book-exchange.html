@@ -10,71 +10,88 @@
     <title>Book Exchange</title>
   </head>
   <body>
-    <nav class="big-nav">
-      <ul class="nav-container">
-        <li class="home"><a href="/">Towfiqul Islam</a></li>
+    <nav class="big-nav bg-white-1 mb-20 w-100 bb-1-white">
+      <ul class="w-70 m-auto p-30">
+        <li class="home">
+          <a class="text-reg black-1" href="/">Towfiqul Islam</a>
+        </li>
 
-        <li><a href="/projects/">Projects</a></li>
-        <li><a href="/articles/">Articles</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/contact/">Contact</a></li>
+        <li><a class="text-reg black-1" href="/projects/">Projects</a></li>
+        <li><a class="text-reg black-1" href="/articles/">Articles</a></li>
+        <li><a class="text-reg black-1" href="/about/">About</a></li>
+        <li><a class="text-reg black-1" href="/contact/">Contact</a></li>
       </ul>
     </nav>
+
     <div class="responsive-nav">
       <div class="menu-icon"></div>
-      <ul class="nav-links">
-        <li class="home"><a href="/">Towfiqul Islam</a></li>
+      <ul class="nav-links w-50 h-100 bg-white-1 pt-60 m-0">
+        <li class="mt-30 p-10">
+          <a class="black-1 text-sm fw-500" href="/">Towfiqul Islam</a>
+        </li>
 
-        <li class="projects"><a href="/projects/">Projects</a></li>
-        <li class="articles"><a href="/articles/">Articles</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/contact/">Contact</a></li>
+        <li class="p-10">
+          <a class="black-1 text-sm fw-500" href="/projects/">Projects</a>
+        </li>
+        <li class="p-10">
+          <a class="black-1 text-sm fw-500" href="/articles/">Articles</a>
+        </li>
+        <li class="p-10">
+          <a class="black-1 text-sm fw-500" href="/about/">About</a>
+        </li>
+        <li class="p-10">
+          <a class="black-1 text-sm fw-500" href="/contact/">Contact</a>
+        </li>
       </ul>
     </div>
     <div class="overlay"></div>
-    <div class="wrapper">
-      <div class="ams-heading">
-        <div class="heading-left ">
-          <h2 class="project-title">
-            A Full Stack Web App made with vanilla JavaScript, PHP & MySQL
-          </h2>
 
-          <div class="action-btn">
-            <a href="/book-exchange-source/" target="_blank" class="source-code"
-              >Source Code</a
-            >
-            <a
-              target="_blank"
-              href="https://exchangeyourbook.netlify.com/"
-              class="live-link"
-              >Visit App</a
-            >
-          </div>
+    <div class="ams-heading sm-none w-60 m-auto">
+      <div class="heading-left pv-60 ph-0">
+        <h2>
+          A Full Stack Web App made with vanilla JavaScript, PHP & MySQL
+        </h2>
+
+        <div class="sm-none mt-40">
+          <a
+            href="/book-exchange-source/"
+            target="_blank"
+            class="white-1 text-reg bg-black-3 br-4 pv-10 ph-15"
+            >Source Code</a
+          >
+          <a
+            target="_blank"
+            href="https://exchangeyourbook.netlify.com/"
+            class="black-1 text-reg bg-white-2 br-4 pv-10 ph-15 ml-10"
+            >Visit App</a
+          >
         </div>
-
-        <video
-          src="../assets/book-exchange/videos/Book_exchange_overview.mp4"
-          width="400px"
-          ;
-          height="250px"
-          ;
-          muted
-          controls
-        ></video>
       </div>
 
-      <div class="ams-heading-2">
-        <h4 style="text-align: center; margin-bottom: 20px;">
-          Project Details
-        </h4>
-        <video
-          src="../assets/book-exchange/videos/Book_exchange_overview.mp4"
-          muted
-          width="100%"
-          height="250px"
-          controls
-        ></video>
+      <video
+        src="../assets/book-exchange/videos/Book_exchange_overview.mp4"
+        width="400px"
+        ;
+        height="250px"
+        ;
+        muted
+        controls
+      ></video>
+    </div>
 
+    <div class="none sm-block">
+      <h4 class="text-center pt-10 pb-40 text-reg text-upper ls-1 sm-pt-25">
+        Project Details
+      </h4>
+      <video
+        src="../assets/book-exchange/videos/Book_exchange_overview.mp4"
+        muted
+        width="100%"
+        height="250px"
+        controls
+      ></video>
+
+<<<<<<< HEAD
         <div class="heading-bottom">
           <h5 style="font-weight: 300;" class="project-title">
             A Full Stack Web App made with vanilla JavaScript, PHP & MySQL
@@ -88,98 +105,117 @@
             >Visit App</a
           >
         </div>
+=======
+      <div>
+        <h5 class="p-20 black-1 fw-400">
+          A Full Stack Web App made with vanilla JavaScript, PHP & MySQL
+        </h5>
+>>>>>>> css-refactor
       </div>
     </div>
 
-    <div class="overview-container">
-      <h3 style="margin-top: 30px;">
+    <div class="w-60 m-auto sm-w-90">
+      <h3 class="mb-20">
         Overview
       </h3>
 
-      <p class="paragraph-text">
+      <p class="text-reg lh-25 w-70 sm-w-100 mb-20">
         A social networking site where you can exchange your favourite books
         with other people.
       </p>
-      <h3 style="margin-bottom: 20px;">Features</h3>
+      <h3 class="mb-20">Features</h3>
 
-      <ul class="paragraph-text">
-        <li><span class="arrow">&rarr;</span> Personalized Library</li>
-        <li><span class="arrow">&rarr;</span> In app messaging</li>
+      <ul class="text-reg lh-25 w-70 sm-w-100 mb-20">
+        <li><span class="text-lg">&rarr;</span> Personalized Library</li>
+        <li><span class="text-lg">&rarr;</span> In app messaging</li>
         <li>
-          <span class="arrow">&rarr;</span> Browse books that are uploaded by
+          <span class="text-lg">&rarr;</span> Browse books that are uploaded by
           other people
         </li>
         <li>
-          <span class="arrow">&rarr;</span> Search and filter to find books
+          <span class="text-lg">&rarr;</span> Search and filter to find books
           quickly
         </li>
       </ul>
     </div>
 
-    <div class="screenshots-container">
-      <div class="screenshots">
-        <h4 style="margin-bottom: 40px;" class="details-header">
-          screenshots
-        </h4>
-        <img
-          class="screenshot-img"
-          src="../assets/book-exchange/screenshots/home.PNG"
-          alt=""
-        />
-        <img
-          class="screenshot-img"
-          src="../assets/book-exchange/screenshots/msg.PNG"
-          alt=""
-        />
-        <img
-          class="screenshot-img"
-          src="../assets/book-exchange/screenshots/msg-modal.PNG"
-          alt=""
-        />
-        <img
-          class="screenshot-img"
-          src="../assets/book-exchange/screenshots/details.PNG"
-          alt=""
-        />
-        <img
-          class="screenshot-img"
-          src="../assets/book-exchange/screenshots/library.PNG"
-          alt=""
-        />
-      </div>
+    <div class="w-60 m-auto sm-w-100">
+      <h4 class="mb-40 text-center text-upper black-1 ls-1">
+        screenshots
+      </h4>
+      <img
+        class="w-100 h-100 block p-10 sm-w-90 m-auto"
+        src="../assets/book-exchange/screenshots/home.PNG"
+        alt=""
+      />
+      <img
+        class="w-100 h-100 block p-10 sm-w-90 m-auto"
+        src="../assets/book-exchange/screenshots/msg.PNG"
+        alt=""
+      />
+      <img
+        class="w-100 h-100 block p-10 sm-w-90 m-auto"
+        src="../assets/book-exchange/screenshots/msg-modal.PNG"
+        alt=""
+      />
+      <img
+        class="w-100 h-100 block p-10 sm-w-90 m-auto"
+        src="../assets/book-exchange/screenshots/details.PNG"
+        alt=""
+      />
+      <img
+        class="w-100 h-100 block p-10 sm-w-90 m-auto"
+        src="../assets/book-exchange/screenshots/library.PNG"
+        alt=""
+      />
     </div>
 
-    <div class="footer" style="margin-top: 30px;">
-      <footer style="margin-bottom: 10px;">
-        <a target="_blank" href="https://github.com/towfiqu"
+    <div class="ph-0 pt-20 pb-10 w-100 text-center bg-white-1 bt-1-white">
+      <footer>
+        <a
+          class="br-4 pv-5 ph-8"
+          target="_blank"
+          href="https://github.com/towfiqu"
           ><img class="footer-icon" src="../assets/svg/github-brands.svg" alt=""
         /></a>
-        <a target="_blank" href="https://twitter.com/Towfiq_ul_Islam"
+        <a
+          class="br-4 pv-5 ph-8"
+          target="_blank"
+          href="https://twitter.com/Towfiq_ul_Islam"
           ><img
             class="footer-icon"
             src="../assets/svg/twitter-brands.svg"
             alt=""
         /></a>
-        <a target="_blank" href="https://www.instagram.com/devvy_metal/"
+        <a
+          class="br-4 pv-5 ph-8"
+          target="_blank"
+          href="https://www.instagram.com/devvy_metal/"
           ><img
             class="footer-icon"
             src="../assets/svg/instagram-brands.svg"
             alt=""
         /></a>
-        <a target="_blank" href="https://www.linkedin.com/in/towfiqu/"
+        <a
+          class="br-4 pv-5 ph-8"
+          target="_blank"
+          href="https://www.linkedin.com/in/towfiqu/"
           ><img
             class="footer-icon"
             src="../assets/svg/linkedin-in-brands.svg"
             alt=""
         /></a>
-        <a target="_blank" href="https://www.facebook.com/towfiqul.islam.144734"
+        <a
+          class="br-4 pv-5 ph-8"
+          target="_blank"
+          href="https://www.facebook.com/towfiqul.islam.144734"
           ><img
             class="footer-icon"
             src="../assets/svg/facebook-f-brands.svg"
             alt=""
         /></a>
 
-        <p style="font-size: 14px; margin-bottom: 0;">
+        <p class="text-sm mb-0 mt-10">
           Copyright &copy 2020 by Towfiqul Islam
         </p>
       </footer>

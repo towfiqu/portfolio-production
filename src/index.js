@@ -1,6 +1,5 @@
 const menuIcon = document.querySelector('.menu-icon');
 const navLinks = document.querySelector('.nav-links');
-const links = document.querySelectorAll('.nav-links li');
 const overlay = document.querySelector('.overlay');
 const footer = document.querySelector('.footer');
 
@@ -11,10 +10,13 @@ menuIcon.addEventListener('click', () => {
 
   navLinks.classList.toggle('open');
   overlay.classList.toggle('active');
+<<<<<<< HEAD
   // footer.classList.toggle('bg-darken');
   links.forEach(link => {
     link.classList.toggle('fade');
   });
+=======
+>>>>>>> css-refactor
 
   if (menuOpen) {
     menuIcon.innerHTML = `
