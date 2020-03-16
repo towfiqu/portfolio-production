@@ -10,13 +10,6 @@ menuIcon.addEventListener('click', () => {
 
   navLinks.classList.toggle('open');
   overlay.classList.toggle('active');
-<<<<<<< HEAD
-  // footer.classList.toggle('bg-darken');
-  links.forEach(link => {
-    link.classList.toggle('fade');
-  });
-=======
->>>>>>> css-refactor
 
   if (menuOpen) {
     menuIcon.innerHTML = `
