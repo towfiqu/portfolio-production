@@ -9,51 +9,68 @@
     <title>Projects</title>
   </head>
   <body>
-    <nav class="big-nav bg-white-1 mb-20 w-100 bb-1-white">
-      <ul class="w-70 m-auto p-30">
-        <li class="home">
-          <a class="text-reg black-1" href="/">Towfiqul Islam</a>
+    <nav class="bg-white-1 mb-20 w-100 bb-1-white sm-none">
+      <ul class="w-70 m-auto p-30 flex">
+        <li class="flex-5">
+          <a class="text-reg black-1 hover-link" href="/">Towfiqul Islam</a>
         </li>
 
-        <li><a class="text-reg black-1" href="/projects/">Projects</a></li>
-        <li><a class="text-reg black-1" href="/articles/">Articles</a></li>
-        <li><a class="text-reg black-1" href="/about/">About</a></li>
-        <li><a class="text-reg black-1" href="/contact/">Contact</a></li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/projects/">Projects</a>
+        </li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/articles/">Articles</a>
+        </li class="flex-1">
+        <li class="flex-1"><a class="text-reg black-1 hover-link" href="/about/">About</a></li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/contact/">Contact</a>
+        </li>
       </ul>
     </nav>
-
-    <div class="responsive-nav">
-      <div class="menu-icon"></div>
-      <ul class="nav-links w-50 h-100 bg-white-1 pt-60 m-0">
+    <!-- Mobile nav -->
+    <div class="none sm-block">
+      <div class="menu-icon absolute pointer z-3"></div>
+      <ul
+        class="mobile-nav-links flex flex-column align-i-center top-0 right-0 shadow-1 translate-x-100 fixed z-2 w-50 h-100 bg-white-1 pt-60 m-0 transition-sm"
+      >
         <li class="mt-30 p-10">
-          <a class="black-1 text-sm fw-500" href="/">Towfiqul Islam</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/"
+            >Towfiqul Islam</a
+          >
         </li>
 
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/projects/">Projects</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/projects/"
+            >Projects</a
+          >
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/articles/">Articles</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/articles/"
+            >Articles</a
+          >
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/about/">About</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/about/">About</a>
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/contact/">Contact</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/contact/"
+            >Contact</a
+          >
         </li>
       </ul>
     </div>
-    <div class="overlay"></div>
+     <!-- Mobile nav -->
+    <div class="overlay fixed none top-0 right-0 bottom-0 left-0 bg-darken"></div>
     <div class="w-50 m-auto">
       <h3 class="text-center pt-10 pb-40 text-reg text-upper ls-1 sm-pt-25">
         Projects
       </h3>
     </div>
-    <div class="projects-wrapper w-70 m-auto sm-w-90">
-      <div class="project br-4">
+    <div class="w-60 m-auto sm-w-90 grid-2 gap-20 sm-grid-1">
+      <div class="br-4 hover-shadow transition-sm">
         <a href="/ams/">
           <img
-            class="w-100 br-top-4"
+            class="w-100 br-top-4 img-h-md sm-img-h-sm"
             src="../assets/ams/screenshots/video_thumbnail.PNG"
             alt=""
           />
@@ -85,10 +102,10 @@
           </div>
         </div>
       </div>
-      <div class="project">
+      <div class="br-4 hover-shadow transition-sm">
         <a href="/book-exchange/">
           <img
-            class="w-100 br-top-4"
+            class="w-100 br-top-4 img-h-md sm-img-h-sm"
             src="../assets/book-exchange/screenshots/home.PNG"
             alt=""
           />
@@ -120,10 +137,10 @@
           </div>
         </div>
       </div>
-      <div class="project">
+      <div class="br-4 hover-shadow transition-sm">
         <a href="/anime-plugin/">
           <img
-            class="w-100 br-top-4"
+            class="w-100 br-top-4 img-h-md sm-img-h-sm"
             src="../assets/anime-plugin/screenshot.PNG"
             alt=""
           />

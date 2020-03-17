@@ -10,44 +10,65 @@
     <title>ams</title>
   </head>
   <body>
-    <nav class="big-nav bg-white-1 mb-20 w-100 bb-1-white">
-      <ul class="w-70 m-auto p-30">
-        <li class="home">
-          <a class="text-reg black-1" href="/">Towfiqul Islam</a>
+    <nav class="bg-white-1 mb-20 w-100 bb-1-white sm-none">
+      <ul class="flex w-70 m-auto p-30">
+        <li class="flex-5">
+          <a class="text-reg black-1 hover-link" href="/">Towfiqul Islam</a>
         </li>
 
-        <li><a class="text-reg black-1" href="/projects/">Projects</a></li>
-        <li><a class="text-reg black-1" href="/articles/">Articles</a></li>
-        <li><a class="text-reg black-1" href="/about/">About</a></li>
-        <li><a class="text-reg black-1" href="/contact/">Contact</a></li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/projects/">Projects</a>
+        </li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/articles/">Articles</a>
+        </li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/about/">About</a>
+        </li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/contact/">Contact</a>
+        </li>
       </ul>
     </nav>
-
-    <div class="responsive-nav">
-      <div class="menu-icon"></div>
-      <ul class="nav-links w-50 h-100 bg-white-1 pt-60 m-0">
+    <!-- Mobile Nav -->
+    <div class="none sm-block">
+      <div class="menu-icon absolute pointer z-3"></div>
+      <ul
+        class="mobile-nav-links flex flex-column align-i-center top-0 right-0 shadow-1 translate-x-100 fixed z-2 w-50 h-100 bg-white-1 pt-60 m-0 transition-sm"
+      >
         <li class="mt-30 p-10">
-          <a class="black-1 text-sm fw-500" href="/">Towfiqul Islam</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/"
+            >Towfiqul Islam</a
+          >
         </li>
 
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/projects/">Projects</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/projects/"
+            >Projects</a
+          >
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/articles/">Articles</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/articles/"
+            >Articles</a
+          >
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/about/">About</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/about/">About</a>
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/contact/">Contact</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/contact/"
+            >Contact</a
+          >
         </li>
       </ul>
     </div>
-    <div class="overlay"></div>
+    <!-- Mobile Nav -->
+    <div
+      class="overlay fixed none top-0 right-0 bottom-0 left-0 bg-darken"
+    ></div>
 
-    <div class="project-heading sm-none w-60 m-auto">
-      <div class="heading-left pv-60 ph-0">
+    <div class="sm-none w-60 m-auto grid-3 gap-20">
+      <div class="pv-60 ph-0 grid-span-2">
         <h2 class="black-2 fw-500">
           A Full Stack Web Application Made with React, NodeJS & MongoDB.
         </h2>
@@ -146,13 +167,13 @@
         Tech used for important features
       </h4>
       <div class="details w-60 m-auto sm-w-90">
-        <div class="item mt-40 pb-20">
+        <div class="grid-2 mt-40 pb-20 sm-grid-1">
           <img
-            class="br-4"
+            class="br-4 img-h-sm img-w-xl sm-w-100"
             src="../assets/ams/screenshots/mongodb.PNG"
             alt=""
           />
-          <div class="sm-mt-20">
+          <div class="sm-mt-20 align-s-center">
             <h4>Database</h4>
             <p class="text-reg lh-25 sm-mt-10">
               MongoDB is used for storing all the data. MongoDB is a very
@@ -160,8 +181,8 @@
             </p>
           </div>
         </div>
-        <div class="item mt-40 pb-20">
-          <div class="sm-none">
+        <div class="grid-2 mt-40 pb-20 sm-grid-1">
+          <div class="sm-none align-s-center">
             <h4>Email</h4>
             <p class="text-reg lh-25">
               Emails are sent to MailTrap.io a real time development mail server
@@ -169,11 +190,11 @@
             </p>
           </div>
           <img
-            class="right-image br-4"
+            class="justify-s-end br-4 img-h-sm img-w-xl sm-w-100"
             src="../assets/ams/screenshots/mail.PNG"
             alt=""
           />
-          <div class="none sm-block sm-mt-20">
+          <div class="none sm-block sm-mt-20 align-s-center">
             <h4>Email</h4>
             <p class="text-reg lh-25 sm-mt-10">
               Emails are sent to MailTrap.io a real time development mail server
@@ -181,9 +202,13 @@
             </p>
           </div>
         </div>
-        <div class="item mt-40 pb-20">
-          <img class="br-4" src="../assets/ams/screenshots/map.PNG" alt="" />
-          <div class="sm-mt-20">
+        <div class="grid-2 mt-40 pb-20 sm-grid-1">
+          <img
+            class="br-4 img-h-sm img-w-xl sm-w-100"
+            src="../assets/ams/screenshots/map.PNG"
+            alt=""
+          />
+          <div class="sm-mt-20 align-s-center">
             <h4>Location</h4>
             <p class="text-reg lh-25 sm-mt-10">
               Google Maps added to show accurate locations and provide pinpoint
@@ -191,8 +216,8 @@
             </p>
           </div>
         </div>
-        <div class="item mt-40 pb-20">
-          <div class="sm-none">
+        <div class="grid-2 mt-40 pb-20 sm-grid-1">
+          <div class="sm-none align-s-center">
             <h4>Performance Boost</h4>
             <p class="text-reg lh-25">
               Pagination added with client side caching for faster data loading
@@ -200,11 +225,11 @@
             </p>
           </div>
           <img
-            class="right-image br-4"
+            class="justify-s-end br-4 img-h-sm img-w-xl sm-w-100"
             src="../assets/ams/screenshots/pagination.PNG"
             alt=""
           />
-          <div class="none sm-block sm-mt-20">
+          <div class="none sm-block sm-mt-20 align-s-center">
             <h4>Performance Boost</h4>
             <p class="text-reg lh-25 sm-mt-10">
               Pagination added with client side caching for faster data loading
@@ -212,13 +237,13 @@
             </p>
           </div>
         </div>
-        <div class="item mt-40 pb-20">
+        <div class="grid-2 mt-40 pb-20 sm-grid-1">
           <img
-            class="br-4"
+            class="br-4 img-h-sm img-w-xl sm-w-100"
             src="../assets/ams/screenshots/password_encryption.PNG"
             alt=""
           />
-          <div class="sm-mt-20">
+          <div class="sm-mt-20 align-s-center">
             <h4>Security</h4>
             <p class="text-reg lh-25 sm-mt-10">
               Sensitive password are encrypted with bcrypt.js. A Popular NodeJS
@@ -227,8 +252,8 @@
             </p>
           </div>
         </div>
-        <div class="item mt-40 pb-20">
-          <div class="sm-none">
+        <div class="grid-2 mt-40 pb-20 sm-grid-1">
+          <div class="sm-none align-s-center">
             <h4>Payment</h4>
             <p class="text-reg lh-25">
               Payments are done through Stripe. A very Popular Payment Platform
@@ -236,11 +261,11 @@
             </p>
           </div>
           <img
-            class="right-image br-4"
+            class="justify-s-end br-4 img-h-sm img-w-xl sm-w-100"
             src="../assets/ams/screenshots/stripe.PNG"
             alt=""
           />
-          <div class="none sm-block sm-mt-20">
+          <div class="none sm-block sm-mt-20 align-s-center">
             <h4>Payment</h4>
             <p class="text-reg lh-25 sm-mt-10">
               Payments are done through Stripe. A very Popular Payment Platform

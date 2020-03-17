@@ -10,44 +10,66 @@
     <title>Anime Plugin</title>
   </head>
   <body>
-    <nav class="big-nav bg-white-1 mb-20 w-100 bb-1-white">
-      <ul class="w-70 m-auto p-30">
-        <li class="home">
-          <a class="text-reg black-1" href="/">Towfiqul Islam</a>
+    <nav class="bg-white-1 mb-20 w-100 bb-1-white sm-none">
+      <ul class="flex w-70 m-auto p-30">
+        <li class="flex-5">
+          <a class="text-reg black-1 hover-link" href="/">Towfiqul Islam</a>
         </li>
 
-        <li><a class="text-reg black-1" href="/projects/">Projects</a></li>
-        <li><a class="text-reg black-1" href="/articles/">Articles</a></li>
-        <li><a class="text-reg black-1" href="/about/">About</a></li>
-        <li><a class="text-reg black-1" href="/contact/">Contact</a></li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/projects/">Projects</a>
+        </li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/articles/">Articles</a>
+        </li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/about/">About</a>
+        </li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/contact/">Contact</a>
+        </li>
       </ul>
     </nav>
 
-    <div class="responsive-nav">
-      <div class="menu-icon"></div>
-      <ul class="nav-links w-50 h-100 bg-white-1 pt-60 m-0">
+    <!-- Mobile Nav -->
+    <div class="none sm-block">
+      <div class="menu-icon absolute pointer z-3"></div>
+      <ul
+        class="mobile-nav-links flex flex-column align-i-center top-0 right-0 shadow-1 translate-x-100 fixed z-2 w-50 h-100 bg-white-1 pt-60 m-0 transition-sm"
+      >
         <li class="mt-30 p-10">
-          <a class="black-1 text-sm fw-500" href="/">Towfiqul Islam</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/"
+            >Towfiqul Islam</a
+          >
         </li>
 
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/projects/">Projects</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/projects/"
+            >Projects</a
+          >
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/articles/">Articles</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/articles/"
+            >Articles</a
+          >
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/about/">About</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/about/">About</a>
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/contact/">Contact</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/contact/"
+            >Contact</a
+          >
         </li>
       </ul>
     </div>
-    <div class="overlay"></div>
+    <!-- Mobile Nav -->
+    <div
+      class="overlay fixed none top-0 right-0 bottom-0 left-0 bg-darken"
+    ></div>
 
-    <div class="project-heading sm-none w-60 m-auto">
-      <div class="heading-left pv-60 ph-0">
+    <div class="sm-none w-60 m-auto grid-3 gap-20">
+      <div class="pv-60 ph-0 grid-span-2">
         <h2 class="black-2 fw-500">
           A Browser Extension Made with React and third party API.
         </h2>
@@ -128,19 +150,19 @@
       <h4 class="mb-40 text-center text-upper black-1 ls-1">
         screenshots
       </h4>
-      <div class="screenshots-container mb-20">
+      <div class="grid-2 gap-20 sm-grid-1 mb-20">
         <img
-          class="w-100 img-h-md br-4 block sm-w-100 sm-br-0 sm-img-h-sm m-auto"
+          class="w-100 img-h-md br-4 block sm-w-100 sm-br-0 sm-img-h-sm m-auto hover-shadow-2 transition-sm"
           src="../assets/anime-plugin/screenshot.PNG"
           alt=""
         />
         <img
-          class="w-100 img-h-md br-4 block sm-w-100 sm-br-0 sm-img-h-sm m-auto"
+          class="w-100 img-h-md br-4 block sm-w-100 sm-br-0 sm-img-h-sm m-auto hover-shadow-2 transition-sm"
           src="../assets/anime-plugin/screenshot-2.PNG"
           alt=""
         />
         <img
-          class="w-100 img-h-md br-4 block sm-w-100 sm-br-0 sm-img-h-sm m-auto"
+          class="w-100 img-h-md br-4 block sm-w-100 sm-br-0 sm-img-h-sm m-auto hover-shadow-2 transition-sm"
           src="../assets/anime-plugin/screenshot-3.PNG"
           alt=""
         />

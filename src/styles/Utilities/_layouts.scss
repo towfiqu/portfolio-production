@@ -1,0 +1,185 @@
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-span-2 {
+  grid-column: span 2;
+}
+
+.gap-20 {
+  grid-gap: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+.flex-4 {
+  flex: 4;
+}
+.flex-5 {
+  flex: 5;
+}
+
+.top-0 {
+  top: 0;
+}
+.right-0 {
+  right: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.left-0 {
+  left: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.br-4 {
+  border-radius: 4px;
+}
+
+.br-top-4 {
+  border-radius: 4px 4px 0 0;
+}
+
+.br-bottom-4 {
+  border-radius: 0 0 4px 4px;
+}
+
+.justify-s-center {
+  justify-self: center;
+}
+
+.justify-i-center {
+  justify-items: center;
+}
+
+.justify-c-center {
+  justify-content: center;
+}
+
+.justify-s-end {
+  justify-self: end;
+}
+
+.align-i-center {
+  align-items: center;
+}
+
+.align-s-center {
+  align-self: center;
+}
+
+.bb-1-grey {
+  border-bottom: 1px solid grey;
+}
+.bb-1-white {
+  border-bottom: 1px solid #ddd;
+}
+
+.bt-1-white {
+  border-top: 1px solid #ddd;
+}
+
+.transition-sm {
+  transition: all 0.3s;
+}
+
+.translate-x-100 {
+  transform: translateX(100%);
+}
+.translate-x-0 {
+  transform: translateX(0);
+}
+
+@media (max-width: 900px) {
+  .sm-grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sm-none {
+    display: none;
+  }
+
+  .sm-block {
+    display: block;
+  }
+
+  .sm-inline-block {
+    display: inline-block;
+  }
+
+  .sm-inline {
+    display: inline;
+  }
+  .sm-br-0 {
+    border-radius: 0;
+  }
+}

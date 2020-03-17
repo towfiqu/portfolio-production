@@ -1,5 +1,5 @@
 const menuIcon = document.querySelector('.menu-icon');
-const navLinks = document.querySelector('.nav-links');
+const mobileNav = document.querySelector('.mobile-nav-links');
 const overlay = document.querySelector('.overlay');
 const footer = document.querySelector('.footer');
 
@@ -8,8 +8,13 @@ let menuOpen = false;
 menuIcon.addEventListener('click', () => {
   menuOpen = !menuOpen;
 
-  navLinks.classList.toggle('open');
-  overlay.classList.toggle('active');
+  mobileNav.classList.toggle('translate-x-0');
+  overlay.classList.toggle('block');
+  if (overlay.classList.contains('block')) {
+    overlay.classList.remove('none');
+  } else {
+    overlay.classList.add('none');
+  }
 
   if (menuOpen) {
     menuIcon.innerHTML = `
@@ -31,8 +36,6 @@ menuIcon.addEventListener('click', () => {
     
     `;
   }
-
-  // console.log(menuOpen);
 });
 
 menuIcon.innerHTML = `

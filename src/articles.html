@@ -10,39 +10,61 @@
     <title>Articles</title>
   </head>
   <body>
-    <nav class="big-nav bg-white-1 mb-20 w-100 bb-1-white">
-      <ul class="w-70 m-auto p-30">
-        <li class="home">
-          <a class="text-reg black-1" href="/">Towfiqul Islam</a>
+    <nav class="bg-white-1 mb-20 w-100 bb-1-white sm-none">
+      <ul class="flex w-70 m-auto p-30">
+        <li class="flex-5">
+          <a class="text-reg black-1 hover-link" href="/">Towfiqul Islam</a>
         </li>
 
-        <li><a class="text-reg black-1" href="/projects/">Projects</a></li>
-        <li><a class="text-reg black-1" href="/articles/"> Articles</a></li>
-        <li><a class="text-reg black-1" href="/about/">About</a></li>
-        <li><a class="text-reg black-1" href="/contact/">Contact</a></li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/projects/">Projects</a>
+        </li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/articles/"> Articles</a>
+        </li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/about/">About</a>
+        </li>
+        <li class="flex-1">
+          <a class="text-reg black-1 hover-link" href="/contact/">Contact</a>
+        </li>
       </ul>
     </nav>
-    <div class="responsive-nav">
-      <div class="menu-icon"></div>
-      <ul class="nav-links w-50 h-100 bg-white-1 pt-60 m-0">
+    <!-- Mobile Nav -->
+    <div class="none sm-block">
+      <div class="menu-icon absolute pointer z-3"></div>
+      <ul
+        class="mobile-nav-links flex flex-column align-i-center top-0 right-0 shadow-1 translate-x-100 fixed z-2 w-50 h-100 bg-white-1 pt-60 m-0 transition-sm"
+      >
         <li class="mt-30 p-10">
-          <a class="black-1 text-sm fw-500" href="/">Towfiqul Islam</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/"
+            >Towfiqul Islam</a
+          >
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/projects/">Projects</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/projects/"
+            >Projects</a
+          >
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/articles/">Articles</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/articles/"
+            >Articles</a
+          >
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/about/">About</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/about/">About</a>
         </li>
         <li class="p-10">
-          <a class="black-1 text-sm fw-500" href="/contact/">Contact</a>
+          <a class="black-1 text-sm fw-500 hover-link" href="/contact/"
+            >Contact</a
+          >
         </li>
       </ul>
     </div>
-    <div class="overlay"></div>
+    <!-- Mobile Nav -->
+    <div
+      class="overlay fixed none top-0 right-0 bottom-0 left-0 bg-darken"
+    ></div>
     <h3
       class="text-center pt-10 pb-10 text-reg text-upper ls-1 sm-pt-25 sm-pb-40"
     >
@@ -51,13 +73,13 @@
     <p class="m-0 text-center pb-40 text-reg sm-none">
       Tutorials I have written on Web Development.
     </p>
-    <div class="article w-45 mh-auto mb-40 sm-w-90">
-      <div class="content">
+    <div class="grid-1 w-45 mh-auto mb-40 sm-w-90">
+      <div class="justify-i-center">
         <a
           target="_blank"
           href="https://medium.com/quick-code/an-introduction-to-rest-api-931380178619"
         >
-          <h3 class="mb-10 black-1 fw-500 text-upper ls-1 title">
+          <h3 class="mb-10 black-1 fw-500 text-upper ls-1 hover-link-2">
             An Introduction to REST API
           </h3>
         </a>
@@ -77,13 +99,13 @@
         </p>
       </div>
     </div>
-    <div class="article w-45 mh-auto mb-40 sm-w-90">
-      <div class="content">
+    <div class="grid-1 w-45 mh-auto mb-40 sm-w-90">
+      <div class="justify-i-center">
         <a
           target="_blank"
           href="https://medium.com/quick-code/authentication-with-jwt-969d612699de"
         >
-          <h3 class="mb-10 black-1 fw-500 text-upper ls-1 title">
+          <h3 class="mb-10 black-1 fw-500 text-upper ls-1 hover-link-2">
             Authentication with JWT
           </h3>
         </a>
@@ -103,13 +125,13 @@
         </p>
       </div>
     </div>
-    <div class="article w-45 mh-auto mb-40 sm-w-90">
-      <div class="content">
+    <div class="grid-1 w-45 mh-auto mb-40 sm-w-90">
+      <div class="justify-i-center">
         <a
           target="_blank"
           href="https://medium.com/@towfiqu/react-image-upload-with-cloudinary-nodejs-and-mongodb-baf23e92ba13"
         >
-          <h3 class="mb-10 black-1 fw-500 text-upper ls-1 title">
+          <h3 class="mb-10 black-1 fw-500 text-upper ls-1 hover-link-2">
             React Image Upload with Cloudinary
           </h3>
         </a>
@@ -128,13 +150,13 @@
         </p>
       </div>
     </div>
-    <div class="article w-45 mh-auto mb-40 sm-w-90">
-      <div class="content">
+    <div class="grid-1 w-45 mh-auto mb-40 sm-w-90">
+      <div class="justify-i-center">
         <a
           target="_blank"
           href="https://medium.com/@towfiqu/nodejs-password-encryption-with-bcrypt-8f78d78dc3e8"
         >
-          <h3 class="mb-10 black-1 fw-500 text-upper ls-1 title">
+          <h3 class="mb-10 black-1 fw-500 text-upper ls-1 hover-link-2">
             NodeJS Password Encryption with bcrypt
           </h3>
         </a>
@@ -154,13 +176,13 @@
         </p>
       </div>
     </div>
-    <div class="article w-45 mh-auto mb-40 sm-w-90">
-      <div class="content">
+    <div class="grid-1 w-45 mh-auto mb-40 sm-w-90">
+      <div class="justify-i-center">
         <a
           target="_blank"
           href="https://medium.com/@towfiqu/setting-up-a-nodejs-server-a58ae1615481"
         >
-          <h3 class="mb-10 black-1 fw-500 text-upper ls-1 title">
+          <h3 class="mb-10 black-1 fw-500 text-upper ls-1 hover-link-2">
             Setting up a NodeJS Server
           </h3>
         </a>
@@ -181,13 +203,13 @@
         </p>
       </div>
     </div>
-    <div class="article w-45 mh-auto mb-40 sm-w-90">
-      <div class="content">
+    <div class="grid-1 w-45 mh-auto mb-40 sm-w-90">
+      <div class="justify-i-center">
         <a
           target="_blank"
           href="https://medium.com/@towfiqu/removing-html-extension-from-netlify-hosted-static-site-with-parcel-41481c9e32fd"
         >
-          <h3 class="mb-10 black-1 fw-500 text-upper ls-1 title">
+          <h3 class="mb-10 black-1 fw-500 text-upper ls-1 hover-link-2">
             Removing .html extension from Netlify Hosted Static Site with
             Parcel.
           </h3>
